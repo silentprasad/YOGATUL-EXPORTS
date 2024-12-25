@@ -128,7 +128,7 @@ footer {
     overflow: hidden;
     width: 100%;
     height: 500px;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 .carousel-track {
     display: flex;
@@ -137,7 +137,7 @@ footer {
 }
 .carousel-slide {
     min-width: 100%;
-    height: 500px;
+    height: auto;
     position: relative;
     
 }
@@ -225,4 +225,15 @@ footer {
         width: 80%;             /* Optional: Adjust width for better appearance */
         text-align: center;     /* Center-align the text */
     }
+
+    .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 70%;
+        margin-top: 1%;
+    }
+    
 }
+
+
