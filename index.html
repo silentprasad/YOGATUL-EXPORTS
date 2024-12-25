@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="home">
         <header>
             <h1>Welcome to Yogatul Exports</h1>
             <p>Connecting the world with premium agricultural exports.</p>
         </header>
         <nav class="nav-menu">
-            <a href="">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#products">Products</a>
             <a href="#contact">Contact</a>
         </nav>
-        <a  class="floating-arrow" title="Go to Home">&#8679;</a>
+        <a class="floating-arrow" title="Go to Home">&#8679;</a>
 
-        <div id="home">
+        <div >
             <div class="carousel">
                 <div class="carousel-track">
                     <div class="carousel-slide">
@@ -55,49 +55,121 @@
             <h2>About Us</h2>
             <p>Your trusted partner for exporting quality agricultural products worldwide.</p>
             <div class="about">
+
+                <div class="card">
+                    <h3>Who we are ?</h3>
+                    <p><b>Yogatul exports</b> is a newly established APEDA-certified exporter, committed to delivering
+                        high-quality agricultural and processed food products. Driven by a vision to bring the best of
+                        India's harvest to global markets, we ensure fresh, reliable, and sustainable offerings for our
+                        customers.</p>
+                </div>
+
                 <div class="card">
                     <h3>Our Mission</h3>
-                    <p>Deliver high-quality, sustainable agricultural products.</p>
+                    <p>To bridge the gap between India’s agricultural excellence and global markets by fostering trust,
+                        ensuring quality, and supporting sustainable farming practices, while contributing to the growth
+                        of local farmers and the agricultural community.</p>
                 </div>
-                <div class="card">
-                    <h3>Our Vision</h3>
-                    <p>Be a global leader in agricultural exports.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Mission</h3>
-                    <p>Deliver high-quality, sustainable agricultural products.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Vision</h3>
-                    <p>Be a global leader in agricultural exports.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Mission</h3>
-                    <p>Deliver high-quality, sustainable agricultural products.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Vision</h3>
-                    <p>Be a global leader in agricultural exports.</p>
-                </div>
+
+
             </div>
         </section>
-        <section id="products">
+        <section>
             <h2>Our Products</h2>
             <div class="products">
-                <div class="card">
+                <div class="card" id="products">
                     <img src="./assets/juggery_image.png" alt="Product">
-                    <h3>Juggery</h3>
-                    <p>Fresh organic Juggery</p>
+                    <h3>Jaggery</h3>
+                    <p>Fresh organic Juggery Cubes</p>
+                    <div class="pack-size">
+                        <div>
+                            10g,
+                        </div>
+                        <div>
+                            20g,
+                        </div>
+                        <div>
+                            50g,
+                        </div>
+                        <div>
+                            100g,
+                        </div>
+                        <div>
+                            200g,
+                        </div>
+                        <div>
+                            500g,
+                        </div>
+                        <div>
+                            1kg,
+                        </div>
+                        <div>
+                            5kg,
+                        </div>
+                        <div>
+                            10kg,
+                        </div>
+                        <div>
+                            25g
+                        </div>
+                       
+                    </div>
+                    <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
+                </div>
+                <div class="card" id="products">
+                    <img src="./assets/juggery_image.png" alt="Product">
+                    <h3>Jaggery</h3>
+                    <p>Fresh In-organic Juggery Cubes</p>
+                    <div class="pack-size">
+                        <div>
+                            10g,
+                        </div>
+                        <div>
+                            20g,
+                        </div>
+                        <div>
+                            50g,
+                        </div>
+                        <div>
+                            100g,
+                        </div>
+                        <div>
+                            200g,
+                        </div>
+                        <div>
+                            500g,
+                        </div>
+                        <div>
+                            1kg,
+                        </div>
+                        <div>
+                            5kg,
+                        </div>
+                        <div>
+                            10kg,
+                        </div>
+                        <div>
+                            25g
+                        </div>
+                       
+                    </div>
+                    <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
                 </div>
                 <div class="card">
                     <img src="./assets/grapes.png" alt="Product">
                     <h3>Fresh Grapes</h3>
                     <p>Fresh and Sweet grapes</p>
+
+                    <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
+              
                 </div>
                 <div class="card">
                     <img src="./assets/turmaric.png" alt="Product">
                     <h3>Turmaric</h3>
                     <p>Good quality Turmaric</p>
+
+                    <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
+              
                 </div>
 
             </div>
@@ -110,10 +182,14 @@
                 <textarea rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form> -->
-            <h5 class="contact-details"> MObile : 9021445755</h5>
-            <h5 class="contact-details">Email : yogatul@gmail.com</h5>
+            <h5 class="contact-details"> MObile : +91 9307608891</h5>
+            <h5 class="contact-details">Email : yogatulexports100@gmail.com</h5>
+            <h5 class="contact-details">Fcebook : -</h5>
+            <h5 class="contact-details">Instagram : -</h5>
 
-           
+
+
+
         </section>
         <footer>
             <p>&copy; 2024 Yogatul Exports. All Rights Reserved.</p>
@@ -147,8 +223,8 @@
                 updateCarousel(currentSlide);
             }, 5000);
 
-          
-        
+
+
             const floatingArrow = document.querySelector('.floating-arrow');
 
             // Show/hide the floating arrow based on scroll position

@@ -67,10 +67,12 @@ section {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     text-align: left;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: center;
+    margin: 20px;
 }
 .card:hover {
     transform: translateY(-10px);
@@ -127,7 +129,7 @@ footer {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 500px;
+    height: auto;
     margin-top: 2%;
 }
 .carousel-track {
@@ -137,7 +139,7 @@ footer {
 }
 .carousel-slide {
     min-width: 100%;
-    height: auto;
+    height: 595px;
     position: relative;
     
 }
@@ -145,6 +147,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain;
+ 
   
 }
 .carousel-caption {
@@ -209,7 +212,35 @@ footer {
 }
 
 
+.enquiry-btn{
+   width: 100px;
+   height: auto;
+   color:white;
+   cursor: pointer;
+   background-color: #008060;
+   border: none;
+   border-radius: 10px;
+   padding: 5px;
+}
 
+.enquiry-btn:hover{
+    width: 100px;
+    height: auto;
+    color:white;
+    cursor: pointer;
+    background-color: #016f54;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+ }
+ 
+
+ .pack-size{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin: 15px 0 15px 0;
+ }
 
 
 @media (max-width : 566px) {
@@ -227,13 +258,20 @@ footer {
     }
 
     .carousel {
+      
         position: relative;
         overflow: hidden;
-        width: 100%;
+        margin-left: 20px;
+        width: 90%;
         height: 70%;
-        margin-top: 1%;
+        margin-top: 5%;
     }
-    
+    .carousel-slide {
+        min-width: 100%;
+        height: 39%;
+        position: relative;
+        
+    }
 }
 
 
