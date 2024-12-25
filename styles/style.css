@@ -235,12 +235,14 @@ footer {
  }
  
 
- .pack-size{
+ .pack-size {
     display: flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    margin: 15px 0 15px 0;
- }
+    flex-direction: row;
+    flex-wrap: wrap; /* Enable wrapping of flex items */
+    justify-content: flex-start;
+    margin: 15px 0;
+}
+
 
 
 @media (max-width : 566px) {
