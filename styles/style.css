@@ -19,7 +19,8 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #005845;
+    /* background-color: #005845; */
+    background-color: #03614d;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -246,6 +247,7 @@ footer {
 .pack-size:child{
     padding: 50px;
 }
+
 
 
 @media (max-width : 566px) {

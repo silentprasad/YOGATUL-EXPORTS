@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yogatul Exports</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -14,6 +15,8 @@
         <header>
             <h1>Welcome to Yogatul Exports</h1>
             <p>Connecting the world with premium agricultural exports.</p>
+           
+
         </header>
         <nav class="nav-menu">
             <a href="#home">Home</a>
@@ -21,9 +24,10 @@
             <a href="#products">Products</a>
             <a href="#contact">Contact</a>
         </nav>
-        <a class="floating-arrow" title="Go to Home">&#8679;</a>
+        <!-- <a class="floating-arrow" title="Go to Home">&#8679;</a> -->
+        <a class="floating-arrow" title="Go to Home">&#8682;</a>
 
-        <div >
+        <div>
             <div class="carousel">
                 <div class="carousel-track">
                     <div class="carousel-slide">
@@ -74,25 +78,38 @@
 
             </div>
         </section>
-        <section>
+        <section id="products">
             <h2>Our Products</h2>
+
             <div class="products">
-                <div class="card" id="products">
+                <div class="card">
                     <img src="./assets/jaggery.jpg" alt="Product">
-                    <h3>Jaggery</h3>
-                    <p>Fresh organic Juggery Cubes</p>
+                    <h3>Organic Jaggery</h3>
+                    <p>Fresh organic Jaggery Cubes</p>
                     <div class="pack-size">
                         <div class="pack-size">10g, 20g, 50g, 100g, 200g, 500g, 1kg, 5kg, 10kg, 25g</div>
                     </div>
+                    <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
+                        Price: 
+                        <span style="color: green; margin-left: 5px; font-size: 20px;">₹35 - ₹70</span>
+                        /kg
+                    </h5>
+                    
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
                 </div>
                 <div class="card" id="products">
-                    <img src="./assets/jaggery.jpg" alt="Product">
+                    <img src="./assets/inorganicjaggery.jpg" alt="Product">
                     <h3>Jaggery</h3>
-                    <p>Fresh In-organic Juggery Cubes</p>
+                    <p>Fresh Jaggery Cubes</p>
                     <div class="pack-size">
                         <div class="pack-size">10g, 20g, 50g, 100g, 200g, 500g, 1kg, 5kg, 10kg, 25g</div>
                     </div>
+                    <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
+                        Price: 
+                        <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹35 - ₹70</span>
+                        /kg
+                    </h5>
+                    
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
                 </div>
                 <div class="card">
@@ -100,11 +117,16 @@
                     <h3>Fresh Grapes</h3>
                     <p>Fresh and Sweet grapes</p>
                     <div class="pack-size">
-                        <div class="pack-size">Varieties available in - Sonaka, Super Sonaka, SS, Manik chaman, Anushka, Ganesh</div>
+                        <div class="pack-size">Varieties available in - Sonaka, Super Sonaka, SS, Manik chaman, Anushka,
+                            Ganesh</div>
                     </div>
-
+                    <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
+                        Price: 
+                        <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹60 - ₹70</span>
+                        /kg
+                    </h5>
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
-              
+
                 </div>
                 <div class="card">
                     <img src="./assets/turmaric.jpg" alt="Product">
@@ -113,33 +135,38 @@
                     <div class="pack-size">
                         <div class="pack-size"> </div>
                     </div>
+                    <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
+                        Price: 
+                        <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹50 - ₹70</span>
+                        /kg
+                    </h5>
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
-              
+
                 </div>
 
             </div>
         </section>
         <section id="contact">
-            <h2 class="contact-details">Contact Us</h2>
-            <!-- <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
+            
+            <form class="contact-form" id="contactForm">
+                <h2 class="contact-details">Contact Us</h2>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
-            </form> -->
-            <h5 class="contact-details"> MObile : +91 9307608891</h5>
-            <h5 class="contact-details">Email : yogatulexports100@gmail.com</h5>
-            <h5 class="contact-details">Fcebook : -</h5>
-            <h5 class="contact-details">Instagram : -</h5>
 
+                <h4>- OR -</h4>
 
-
-
+                <h5 class="contact-details">Mobile: +91 9307608891</h5>
+                <h5 class="contact-details">Email: yogatulexports100@gmail.com</h5>
+            </form>
+           
         </section>
+
         <footer>
             <p>&copy; 2024 Yogatul Exports. All Rights Reserved.</p>
         </footer>
-
+     
         <script>
             const track = document.querySelector('.carousel-track');
             const slides = Array.from(track.children);
@@ -188,6 +215,39 @@
                     behavior: 'smooth' // Enables smooth scrolling
                 });
             });
+
+
+
+            /// email
+
+            emailjs.init('hT5j542zfuTQwXlXu'); // Replace 'your_user_id' with your EmailJS User ID
+
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Send the email using EmailJS
+                emailjs.send('service_kdqpdvg', 'template_6f9bbpq', {
+                    name: name,
+                    email: email,
+                    message: message,
+                }).then(
+                    (response) => {
+                        alert('Thank You');
+                    },
+                    (error) => {
+                        console.error(error);
+                        alert('Something went wrong');
+                        console.error(error);
+                    }
+                );
+            });
+            //// -email
         </script>
 </body>
 
