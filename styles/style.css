@@ -77,7 +77,7 @@ section {
 }
 
 .card h3, .card p, .card .pack-size, .card h5 {
-    margin-top: 10px;  /* Adjust margin of headings and other elements within the card */
+    margin-top: 10px;  
     margin-bottom: 15px;
 }
 .card:hover {
@@ -251,6 +251,27 @@ footer {
 
 .pack-size:child{
     padding: 50px;
+}
+
+
+.contact-number {
+    display: flex;
+    gap: 8px;
+}
+
+#countryCode {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50px;
+}
+
+#contactno {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 100%;
 }
 
 

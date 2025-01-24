@@ -15,7 +15,7 @@
         <header>
             <h1>Welcome to Yogatul Exports</h1>
             <p>Connecting the world with premium agricultural exports.</p>
-           
+
 
         </header>
         <nav class="nav-menu">
@@ -90,11 +90,11 @@
                         <div class="pack-size">10g, 20g, 50g, 100g, 200g, 500g, 1kg, 5kg, 10kg, 25g</div>
                     </div>
                     <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
-                        Price: 
+                        Price:
                         <span style="color: green; margin-left: 5px; font-size: 20px;">₹35 - ₹70</span>
                         /kg
                     </h5>
-                    
+
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
                 </div>
                 <div class="card" id="products">
@@ -105,11 +105,11 @@
                         <div class="pack-size">10g, 20g, 50g, 100g, 200g, 500g, 1kg, 5kg, 10kg, 25g</div>
                     </div>
                     <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
-                        Price: 
+                        Price:
                         <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹35 - ₹70</span>
                         /kg
                     </h5>
-                    
+
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
                 </div>
                 <div class="card">
@@ -121,8 +121,8 @@
                             Ganesh</div>
                     </div>
                     <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
-                        Price: 
-                        <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹60 - ₹70</span>
+                        Price:
+                        <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹60 - ₹100</span>
                         /kg
                     </h5>
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
@@ -132,14 +132,14 @@
                     <img src="./assets/turmaric.jpg" alt="Product">
                     <h3>Turmaric</h3>
                     <p>Good quality Turmaric</p>
-                    <div class="pack-size">
+                    <!-- <div class="pack-size">
                         <div class="pack-size"> </div>
                     </div>
                     <h5 style="display: flex; align-items: center; font-size: 18px; font-weight: bold;">
                         Price: 
                         <span style="color: green; margin-left: 5px; font-size: 20px;"> ₹50 - ₹70</span>
                         /kg
-                    </h5>
+                    </h5> -->
                     <a href="#contact"><button class="enquiry-btn">Enquire</button></a>
 
                 </div>
@@ -147,12 +147,26 @@
             </div>
         </section>
         <section id="contact">
-            
+
             <form class="contact-form" id="contactForm">
                 <h2 class="contact-details">Contact Us</h2>
+
+                <!-- Name Input -->
                 <input type="text" id="name" placeholder="Your Name" required>
+
+                <!-- Contact Number with Country Code -->
+                <div class="contact-number">
+                    <input id="countryCode" placeholder="+91" required>
+                    <input type="tel" id="contactno" placeholder="Your Contact Number (Optional)" required>
+                </div>
+
+                <!-- Email Input -->
                 <input type="email" id="email" placeholder="Your Email" required>
+
+                <!-- Message Textarea -->
                 <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <!-- Submit Button -->
                 <button type="submit">Send Message</button>
 
                 <h4>- OR -</h4>
@@ -160,13 +174,13 @@
                 <h5 class="contact-details">Mobile: +91 9307608891</h5>
                 <h5 class="contact-details">Email: yogatulexports100@gmail.com</h5>
             </form>
-           
+
         </section>
 
         <footer>
             <p>&copy; 2024 Yogatul Exports. All Rights Reserved.</p>
         </footer>
-     
+
         <script>
             const track = document.querySelector('.carousel-track');
             const slides = Array.from(track.children);
@@ -199,20 +213,20 @@
 
             const floatingArrow = document.querySelector('.floating-arrow');
 
-            // Show/hide the floating arrow based on scroll position
+
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) { // Show the arrow when scrolled more than 300px
+                if (window.scrollY > 300) {
                     floatingArrow.classList.add('show');
                 } else {
                     floatingArrow.classList.remove('show');
                 }
             });
 
-            // Scroll to the top smoothly when clicked
+
             floatingArrow.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
-                    behavior: 'smooth' // Enables smooth scrolling
+                    behavior: 'smooth'
                 });
             });
 
@@ -220,34 +234,59 @@
 
             /// email
 
-            emailjs.init('hT5j542zfuTQwXlXu'); // Replace 'your_user_id' with your EmailJS User ID
-
+            emailjs.init('EDILKxfjPiVBvv3_c');
             const form = document.getElementById('contactForm');
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
 
-                // Get form values
+
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
+                const countryCode = document.getElementById('countryCode').value;
+                const contactNo = document.getElementById('contactno').value;
                 const message = document.getElementById('message').value;
+                console.log(contactNo && !/^\d+$/.test(contactNo) && contactNo.length < 10);
 
-                // Send the email using EmailJS
-                emailjs.send('service_kdqpdvg', 'template_6f9bbpq', {
+
+                if (contactNo && (!/^\d{10}$/.test(contactNo))) {
+                    alert('Please enter a valid contact number (10 digits, no special characters).');
+                    return;
+                }
+
+
+
+                if (!countryCode) {
+                    alert('Please enter a valid code ');
+                    return;
+                }
+                er
+                const fullContactNumber = contactNo ? `${countryCode} ${contactNo}` : 'Not Provided';
+
+
+                emailjs.send('service_er6npqu', 'template_qggwtcp', {
                     name: name,
                     email: email,
+                    contact_number: fullContactNumber,
                     message: message,
                 }).then(
                     (response) => {
-                        alert('Thank You');
+                        alert('Thank you for reaching out. Your message has been sent successfully!');
+                        form.reset(); // Reset form fields after successful submission
                     },
                     (error) => {
                         console.error(error);
-                        alert('Something went wrong');
-                        console.error(error);
+                        alert('Something went wrong. Please try again later.');
                     }
                 );
             });
-            //// -email
+
+
+            const contactNumberInput = document.getElementById('contactno');
+            contactNumberInput.addEventListener('input', (e) => {
+                e.target.value = e.target.value.replace(/[^0-9]/g, '');
+            });
+
+
         </script>
 </body>
 
